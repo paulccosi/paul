@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="css/style_1.css">
+<!--fdf-->
+
+        <script type="text/javascript">
+             window.onload = function(e) {
+               buscarPersona("");
+            };            
+            
+        </script>      
+    </head>
+    <body bgcolor="#CCFFFF">
+   <font color="">
+    <body>
+        
+  <div id="container">
+
+    <h1><font><font> Formulario de Registro de Personas</font></font></h1>
+
+    
+      
+      <div>
+        <label for="nombre"><font><font>Nombre: </font></font></label><input id="nombre" type="text" value="">
+      </div>
+      <div>
+        <label for="apellido"><font><font>Apellido:</font></font></label><input id="apellido" type="text" value="">
+      </div>
+      <div>
+        <label for="dni"><font><font>DNI: </font></font></label><input id="dni" type="text" value="">
+      </div>
+      <div>
+        <label for="fn"><font><font>Fecha de Nacimineto: </font></font></label><input id="fn" type="date" value="">
+      </div>
+      <div>
+        <label for="genero"><font><font>genero: </font></font></label><input id="genero" type="text" value="">
+      </div>
+      <div>
+         <label for='profesion'>Profesion: </label>
+            <select id='profesion' name='profesion'>
+            <option value=''>Seleccione</option>
+            <option>Ningunos</option>
+            <option>Bachiller</option>
+            <option>Doctorado</option>
+            <option>Grado</option>
+            <option>Master</option>
+            </select>
+   	 
+   	</td> 
+      </div>
+      <div>
+        <label for="telefono"><font><font>Telefono: </font></font></label><input id="telefono" type="text" value="">
+        <input id="idPersona" type="hidden" value="">
+      </div>
+
+      <button id="storeButton"><font><font class="">Guardar</font></font></button>
+    
+      <div>
+          
+      </div>
+    
+    <legend><font><font>Buscar Persona:</font></font></legend>
+      <div>
+          
+      </div>  
+    <label for="query"><font><font>Nombre: </font></font></label><input id="queryx" type="text" placeholder="&#9775; Buscar" value="">
+      
+    <button id="findButton"><font><font>Buscar</font></font></button>
+      <div>
+          
+      </div>
+
+    <center>
+        <table id="TableData" border="1" style="width: 150%">
+            <thead style="background-color: buttonhighlight">
+        <th>#</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>DNI</th>
+        <th>Fecha de Nacimiento</th>
+        <th>Genero</th>
+        <th>Profesion</th>
+        <th>Telefono</th>
+        <th>Opciones</th>
+        </thead>
+        <tbody id="data">        
+        </tbody>
+    </table>
+  </center>
+
+    <script type="text/javascript" async="" src="js/libs/ga.js"></script>
+    <script src="js/david.js"></script>
+
+    
+  </div>
+
+       
+  </body>
+</html>
